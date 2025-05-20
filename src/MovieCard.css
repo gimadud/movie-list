@@ -1,0 +1,46 @@
+.card-container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap
+}
+
+
+body {
+
+  background-color: #000000;
+}
+
+.movie-cards{
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 380px;
+    background-color: black;
+    padding: 20px;
+}
+
+p{
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    margin: 0;
+}
+
+img{
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+
+.movie-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 84px;
+
+}
