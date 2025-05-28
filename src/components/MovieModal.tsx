@@ -1,6 +1,7 @@
 import './MovieModal.css';
+import { MovieModalProps } from '../types/movie';
 
-function MovieModal({ movieData, onClose }) {
+function MovieModal({ movieData, onClose }: MovieModalProps) {
   const imageUrl = `https://image.tmdb.org/t/p/w500${movieData.poster_path}`;
 
   return (

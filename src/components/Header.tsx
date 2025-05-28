@@ -1,7 +1,6 @@
-// Header.jsx
 import './Header.css';
 
-function Header() {
+const Header: React.FC = () => {
   return (
     <header className="header">
       <h1>Movie List</h1>

@@ -1,8 +1,11 @@
-import { useState} from 'react';
-import MovieModal from './MovieModal.jsx';
+import { useState } from 'react';
+import MovieModal from './MovieModal';
 import './MovieCard.css';
+import { MovieProps } from '../types/movie';
 
-function MovieCard({movieData}) {
+
+
+function MovieCard({movieData}: MovieProps) {
   const [isOpen, setIsOpen] = useState(false);
   console.log(movieData);
 

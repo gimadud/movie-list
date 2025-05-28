@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
-import MovieCard from './MovieCard.jsx'
+import MovieCard from './MovieCard';
 import './MovieCard.css';
+import { Movie } from '../types/movie';
 
-
-function MovieList() {
-  const [movies, setMovies] = useState([]);
+const MovieList: React.FC = () => {
+  const [movies, setMovies] = useState<Movie[]>([]);
 
 
   useEffect(() => {
