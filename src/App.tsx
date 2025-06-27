@@ -1,6 +1,8 @@
 import MovieList from './components/MovieList'
 import Header from './components/Header';
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
+
+const LazyMovieList = lazy(() => import('./components/MovieList'));
 
 const App: React.FC = () => {
   return (
@@ -9,7 +11,9 @@ const App: React.FC = () => {
         <Header />
       </header>
       <main>
-        <MovieList />
+        <Suspense fallback={<p style={{ color: 'white' }}>로딩 중입니다...</p>}>
+  <LazyMovieList />
+</Suspense>
       </main>
       <footer></footer>
     </>
